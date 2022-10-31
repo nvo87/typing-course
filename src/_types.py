@@ -13,6 +13,16 @@ def check_email(email: str) -> Email:
         raise TypeError('Not email format')
 
 
+class Post(TypedDict):
+    userId: int
+    id: int
+    title: str
+    body: str
+
+
+
+
+
 class ShortUser(TypedDict):
     id: int
     name: str
